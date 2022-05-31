@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import {Link} from "react-router-dom";
 
 class SeccionPractica extends Component{
 
@@ -14,9 +15,7 @@ class SeccionPractica extends Component{
                         <p className="seccion-practica__descripcion">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
                         </p>
-                        <a href="#" className="seccion-practica__boton">
-                            Ir al Shop
-                        </a>
+                        <Link to="/shop">Ir al Shop </Link>
                     </div>
                 </div>
             </div>

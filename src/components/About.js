@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import {Link} from "react-router-dom";
 
 class About extends Component{
 
@@ -19,9 +20,7 @@ class About extends Component{
                         <p className="about__descripcion">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
                         </p>
-                        <a href="#" className="about__boton">
-                            Ir al Shop
-                        </a>
+                        <Link to="/shop">Ir al Shop </Link>
                     </div>
                 </div>
             </div>

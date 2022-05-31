@@ -1,6 +1,10 @@
 import React,{Component} from "react";
 import logo from "../assets/images/react.svg";
-import {NavLink} from "react-router-dom";
+import logocart from "../assets/images/cart4.svg";
+import {NavLink,Link} from "react-router-dom";
+import CarWidget from "./CarWidget";
+
+
 
 class Header extends Component {
 
@@ -16,8 +20,8 @@ class Header extends Component {
                         <strong>App</strong>Store
                     </span>
                 </div>
-                
             
+             
                 <nav id="menu">
                     <ul>
                         <li>
@@ -30,13 +34,21 @@ class Header extends Component {
                           
                         </li>                       
                         <li>
-                            <NavLink to="/practica">Practica</NavLink>
+                            <NavLink to="/ItemListContainer">Productos</NavLink>
                           
                         </li>
+                        <li>                      
+                    
+                        <NavLink to="/shop" ><img src={logocart} className="app-logo" alt="Logotipo"  /><span >2</span></NavLink>                      
+                  
+                        </li>                    
                                                    
                     </ul>
+                   
                 </nav>
+             
 
+            
              
                 <div className="clearfix"></div>
             </div>
