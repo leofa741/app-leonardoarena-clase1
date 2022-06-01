@@ -1,34 +1,32 @@
-import React,{Component} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 
-class ItemListContainer extends Component  {
 
 
-  render() {
-
- 
-
+const ItemListContainer = (props) => {
 
     return (
-      <div className="item-list-container">
-        <div className="center">
-          <div className="item-list-container__contenedor">
-            <div className="item-list-container__contenido">
-              <h1 className="item-list-container__titulo">
-              {this.props.title}
-              </h1>
-              <p className="item-list-container__descripcion">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
-              </p>
-              <p className="item-list-container__descripcion">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
-              </p>
-              <Link to="/shop">Ir al Shop </Link>
-            </div>
-          </div>
+
+<> 
+<h1>{props.title} </h1>
+
+<div className="cards">
+        <div className="card">ONE</div>
+        <div className="card">TWO</div>
+        <div className="card">THREE</div>
+        <div className="card">FOUR</div>
+        <div className="card">FIVE</div>
+        <div className="card">SIX</div>
+        <div className="card">SEVEN</div>
+        <div className="card">EIGHT</div>
+        <div className="card">NINE</div>
+        <div className="card">TEN</div>
+        <div className="card">ELEVEN</div>
+        <div className="card">TWELVE</div>
         </div>
-      </div>
+        <Link to="/shop">Ir al Shop </Link>
+        </>
     );
-  }
+
 }
 export  default ItemListContainer;
