@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import logo from "../assets/images/react.svg";
-import logocart from "../assets/images/cart4.svg";
-import {NavLink,Link} from "react-router-dom";
+
+import {NavLink} from "react-router-dom";
 import CarWidget from "./CarWidget";
 
 
