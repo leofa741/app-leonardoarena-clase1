@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { Component } from "react";
 
-class Shop extends Component {
-  render() {
+const Shop = () => {
+ 
     return (
       <div className="shop">
         <div className="center">
@@ -23,6 +23,6 @@ class Shop extends Component {
         </div>
       </div>
     );
-  }
+ 
 }
 export default Shop;

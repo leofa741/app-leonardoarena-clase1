@@ -6,9 +6,9 @@ import CarWidget from "./CarWidget";
 
 
 
-class Header extends Component {
+const Header = () => {
 
-    render() {
+  
         return (
          
             <header id="header">
@@ -40,7 +40,7 @@ class Header extends Component {
                         <li>                      
                     
                         <NavLink to="/shop" ><img src={logocart} className="app-logo" alt="Logotipo"  /><span >2</span></NavLink>                      
-                  
+                  <CarWidget></CarWidget>
                         </li>                    
                                                    
                     </ul>
@@ -55,7 +55,7 @@ class Header extends Component {
         </header>
 
         );
-    }
+   
 }
 
 export default Header;

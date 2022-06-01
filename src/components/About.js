@@ -1,9 +1,10 @@
-import React,{Component} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 
-class About extends Component{
 
-    render(){
+const About = () => {
+
+  
         return(
             <div className="about">
                 <div className="about__contenedor">
@@ -25,7 +26,7 @@ class About extends Component{
                 </div>
             </div>
         );
-    }
+   
 }
 
 export default About;

@@ -1,8 +1,8 @@
 import React,{Component} from "react";
 
-class Error extends Component{
+const Error = () => {
 
-    render(){
+
         return(
             <div className="error">
                 <div className="error__contenedor">
@@ -20,6 +20,6 @@ class Error extends Component{
                 </div>
             </div>
         );
-    }
+   
 }   
 export default Error;

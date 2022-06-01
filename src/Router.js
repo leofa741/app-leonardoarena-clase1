@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React from "react";
 import {BrowserRouter ,  Routes,Route} from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer";
 import About from "./components/About";
@@ -7,10 +7,10 @@ import Error from "./components/Error";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
-import Shop from "./components/Shop";
-class Router extends Component{
+import CarWidget from "./components/CarWidget";
+const Router = () => {
 
-    render(){
+ 
         return(
            <BrowserRouter>
 
@@ -22,7 +22,7 @@ class Router extends Component{
                 <Route exact path="/home" element={<Home/>} />
                 <Route exact path="/about" element={<About/>} />
                 <Route exact path="/ItemListContainer" element={<ItemListContainer title=" productos del E-Shop"/>} />
-                <Route exact path="/shop" element={<Shop/>} />
+                <Route exact path="/shop" element={<CarWidget/>} />
 
                 <Route path="*" element={<Error/>} />
 
@@ -40,7 +40,7 @@ class Router extends Component{
 
            
         );
-    }
+   
 }
 
     export  default Router;

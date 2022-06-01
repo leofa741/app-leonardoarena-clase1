@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 
-class Slider extends Component{
+const Slider = () => {
 
-render(){
+
 return(
 
     <div className="accordion">
@@ -77,7 +77,7 @@ return(
 
 );
 
-}
+
 
 }
 
