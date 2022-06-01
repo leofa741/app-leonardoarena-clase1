@@ -23,7 +23,7 @@ const Router = () => {
                 <Route exact path="/home" element={<Home/>} />
                 <Route exact path="/about" element={<About/>} />
                 <Route exact path="/ItemListContainer" element={<ItemListContainer title=" productos del E-Shop"/>} />
-                <Route exact path="/shop" element={<CarWidget/>} />
+                <Route exact path="/shop" element={<CarWidget inNav={false} />} />
 
                 <Route path="*" element={<Error/>} />
 

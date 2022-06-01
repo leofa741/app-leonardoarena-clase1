@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React from "react";
 import logo from "../assets/images/react.svg";
 
 import {NavLink} from "react-router-dom";
@@ -7,6 +7,9 @@ import CarWidget from "./CarWidget";
 
 
 const Header = () => {
+
+
+  
 
   
         return (
@@ -37,10 +40,10 @@ const Header = () => {
                             <NavLink to="/ItemListContainer">Productos</NavLink>
                           
                         </li>
-                        <li>                      
+                        <li >                      
                     
                                    
-                  <CarWidget></CarWidget>
+                  <CarWidget menu="false"   ></CarWidget>
                         </li>                    
                                                    
                     </ul>
