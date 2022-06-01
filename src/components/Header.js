@@ -39,7 +39,7 @@ const Header = () => {
                         </li>
                         <li>                      
                     
-                        <NavLink to="/shop" ><img src={logocart} className="app-logo" alt="Logotipo"  /><span >2</span></NavLink>                      
+                                   
                   <CarWidget></CarWidget>
                         </li>                    
                                                    

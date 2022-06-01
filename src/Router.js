@@ -16,6 +16,7 @@ const Router = () => {
 
 <Header></Header>
 <Slider></Slider>
+
 <div className="center">
            <Routes>
                 <Route exact path="/" element={<Home/>} />
