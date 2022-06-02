@@ -1,8 +1,7 @@
 import React from "react";
 import logo from "../assets/images/react.svg";
 
-import {NavLink} from "react-router-dom";
-import CarWidget from "./CarWidget";
+import NavBar from "./NavBar";
 
 
 
@@ -25,31 +24,8 @@ const Header = () => {
                 </div>
             
              
-                <nav id="menu">
-                    <ul>
-                        <li>
-                            
-                            <NavLink to="/home"  >Home</NavLink>
-                         
-                        </li>
-                        <li>
-                            <NavLink to="/about">About</NavLink>
-                          
-                        </li>                       
-                        <li>
-                            <NavLink to="/ItemListContainer">Productos</NavLink>
-                          
-                        </li>
-                        <li >                      
-                    
-                                   
-                  <CarWidget menu="true"   ></CarWidget>
-                        </li>                    
-                                                   
-                    </ul>
-                   
-                </nav>
-             
+              
+             <NavBar></NavBar>
 
             
              
