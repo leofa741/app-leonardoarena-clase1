@@ -2,7 +2,7 @@ import React from "react";
 import logocart from "../assets/images/cart4.svg";
 import {NavLink} from "react-router-dom";
 
-import NavBar from "./NavBar";
+
 
 
 
@@ -32,7 +32,7 @@ return (
                 <h1 className="item-list-container__titulo">  Carrito    </h1>
 
 
-            
+             
 
     
    
