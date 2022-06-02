@@ -8,30 +8,22 @@ import CarWidget from './CarWidget'
 const NavBar = () => {
   return (
     <nav id="menu">
-    <ul>
+      <ul>
         <li>
-            
-            <NavLink to="/home"  >Home</NavLink>
-         
+          <NavLink to="/home">Home</NavLink>
         </li>
         <li>
-            <NavLink to="/about">About</NavLink>
-          
-        </li>                       
-        <li>
-            <NavLink to="/ItemListContainer">Productos</NavLink>
-          
+          <NavLink to="/about">About</NavLink>
         </li>
-        <li >                      
-    
-                   
-  <CarWidget menu="true" ></CarWidget>
-        </li>                    
-                                   
-    </ul>
-   
-</nav>
-  )
-}
+        <li>
+          <NavLink to="/ItemListContainer">Productos</NavLink>
+        </li>
+        <li>
+          <CarWidget menu="true"></CarWidget>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
