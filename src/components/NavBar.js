@@ -25,7 +25,7 @@ const NavBar = () => {
         <li >                      
     
                    
-  <CarWidget menu="true"   ></CarWidget>
+  <CarWidget menu="true"  ></CarWidget>
         </li>                    
                                    
     </ul>
