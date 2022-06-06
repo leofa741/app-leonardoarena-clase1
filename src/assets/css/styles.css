@@ -81,17 +81,19 @@ body {
 
 #menu a{
     text-decoration: none;
-    color: #444;
+    color: rgb(0, 0, 0);
     transition: 300ms all;
 }
 
 
 #menu a:hover{
-    color: #3cb2d3;
+
+    color: #000000;
+    font-weight: bold;
 }
 .active{
-    border-bottom: #3cb2d3 solid 3px;
-  
+    border-bottom: #000000 solid 3px;
+    font-weight: bold;
 }
 
 #slider{
@@ -426,12 +428,12 @@ textarea{
 /* Footer  */
 
 .footer-distributed{
-	background: #666;
+	background: rgb(0, 0, 0);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	padding: 55px 50px;
 }
 
@@ -452,12 +454,12 @@ textarea{
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0;
 }
 
 .footer-distributed h3 span{
-	color:  lightseagreen;
+	color:  rgb(255, 255, 255);
 }
 
 /* Footer links */
@@ -477,7 +479,7 @@ textarea{
 }
 
 .footer-distributed .footer-company-name{
-	color:  #222;
+	color:  rgb(255, 255, 255);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;

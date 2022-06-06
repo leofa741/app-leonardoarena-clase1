@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/images/react.svg";
 
+
 import NavBar from "./NavBar";
 
 
@@ -20,8 +21,9 @@ const Header = () => {
                   <strong>App</strong>Store
                 </span>
               </div>
-
+             
               <NavBar></NavBar>
+            
 
               <div className="clearfix"></div>
             </div>

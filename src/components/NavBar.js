@@ -7,7 +7,9 @@ import CarWidget from './CarWidget'
 
 const NavBar = () => {
   return (
+ 
     <nav id="menu">
+  
       <ul>
         <li>
           <NavLink to="/home">Home</NavLink>
@@ -18,8 +20,9 @@ const NavBar = () => {
         <li>
           <NavLink to="/ItemListContainer">Productos</NavLink>
         </li>
+     
         <li>
-          <CarWidget menu="true"></CarWidget>
+          <CarWidget menu="true" ></CarWidget>
         </li>
       </ul>
     </nav>
