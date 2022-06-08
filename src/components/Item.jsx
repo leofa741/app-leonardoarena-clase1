@@ -7,7 +7,7 @@ function Item({ id, name, images, title, description, price, inStock }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const productImage = useMemo(() => {
-    return isHovered ? images[0] : images[1];
+    return isHovered ? images[1] : images[0];
   }, [isHovered, images]);
 
   return (

@@ -43,8 +43,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
           <Button color="Add" aria-label="reduce" onClick={() => restar()}>
             <RemoveIcon fontSize="small" />
           </Button>
-        </ThemeProvider>
-        <ThemeProvider theme={theme}>
+       
           <Button color="rest" aria-label="increase" onClick={() => sumar()}>
             <AddIcon fontSize="small" />
           </Button>
@@ -53,8 +52,8 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       <br />
 
       <Button variant="contained" size="small">
-        {" "}
-        confirmar
+ 
+       Comprar
       </Button>
     </div>
   );

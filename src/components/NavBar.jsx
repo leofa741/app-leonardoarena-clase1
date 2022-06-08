@@ -9,7 +9,7 @@ import {Box} from '@mui/material'
 const NavBar = () => {
   return (
     <>
- <Box sx={{display:{xs:'none' ,sm:'block'}}}>
+ <Box sx={{display:{xs:'block' ,sm:'block'}}}>
     <nav id="menu">
   
       <ul>
