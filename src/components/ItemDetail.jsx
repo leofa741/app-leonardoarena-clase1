@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
-import { useMemo } from "react";
+
 import ItemCount from "./ItemCount";
 import productos from "../database/products";
 import { useParams } from "react-router-dom";
@@ -15,16 +15,15 @@ const ItemDetail = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} sm={6} md={4} lg={6}>
-        <Slide easing="ease" duration={500} indicators={true}>
-          {product.images.map((image) => {
-            const url = `/images/${image}`;
+        <Slide easing="ease" duration={900} indicators={true}>
+          {product.images.map((img) => {
+            const url = `/images/${img}`;
             return (
-              <div className={"eachslide"} key={image}>
+              <div className={"eachslide"} key={img}>
                 <div
                   style={{
                     backgroundSize: "cover",
                     backgroundImage: `url(${url})`,
-
                     width: "100%",
                   }}
                 ></div>

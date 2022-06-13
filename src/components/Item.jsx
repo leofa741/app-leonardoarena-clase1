@@ -44,7 +44,7 @@ function Item({ id, name, images, title, description, price, inStock }) {
       </Card>
 
       <Box sx={{ mt: 1 }} className="fadeIn">
-        <Typography>id:{id}</Typography>
+    
         <Typography>$:{price}</Typography>
         <Typography>{title}</Typography>
 

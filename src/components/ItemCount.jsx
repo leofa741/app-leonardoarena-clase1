@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import Button from "@mui/material/Button";
+import {Button,IconButton} from "@mui/material";
 
 import ButtonGroup from "@mui/material/ButtonGroup";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import RemoveCircleOutline from "@mui/icons-material/RemoveCircleOutline";
+import AddCircleOutline from "@mui/icons-material/AddCircleOutline";
+import { Icon } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -14,7 +17,7 @@ const theme = createTheme({
       contrastText: "#fff",
     },
     rest: {
-      main: "#1041DC",
+      main: "#008000",
       contrastText: "#fff",
     },
   },
@@ -36,18 +39,22 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
   return (
     <div>
-      <p> {count} </p>
+    
 
       <ButtonGroup>
         <ThemeProvider theme={theme}>
-          <Button color="Add" aria-label="reduce" onClick={() => restar()}>
-            <RemoveIcon fontSize="small" />
-          </Button>
-       
-          <Button color="rest" aria-label="increase" onClick={() => sumar()}>
-            <AddIcon fontSize="small" />
-          </Button>
+
+        
+        <IconButton  color='rest' onClick={restar}>
+            <RemoveCircleOutline />
+          </IconButton>
+          <p> {count} </p>
+          <IconButton color='Add' onClick={sumar}>
+            <AddCircleOutline />
+          </IconButton>
         </ThemeProvider>
+
+     
       </ButtonGroup>
       <br />
 
