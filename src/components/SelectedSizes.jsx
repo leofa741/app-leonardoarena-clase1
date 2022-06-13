@@ -1,29 +1,14 @@
-import React from 'react';
-import {IconButton,Box,Typography} from "@mui/material";
+import React from "react";
+import { Button, Box, Typography } from "@mui/material";
 
-
-
-
-export const SelectedSizes= (props) => {
+export const SelectedSizes = (props) => {
   return (
-
     <Box>
-
-      {
-        props.sizes.map(size =>
-         
-          <IconButton key={size} 
-          size= "small"   
-          color="primary"  
-              
-           >          
-            
-
-                {size}          
-            </IconButton>  
-    
-        )}
-</Box>
- 
-  )
-}
+      {props.sizes.map((size) => (
+        <Button key={size} size="small"     >
+          {size}
+        </Button>
+      ))}
+    </Box>
+  );
+};

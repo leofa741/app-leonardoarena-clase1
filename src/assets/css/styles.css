@@ -124,25 +124,25 @@ body {
 .btn-white{
     display: block;
     background: white;
-    color:rgb(88, 88, 88);
+    color:rgb(3, 3, 3);
     padding: 10px;
-    width: 100px;
-    height: 35px;
-    margin: 0px auto;
-    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px ;
+    font-size: 10px;
     text-transform: uppercase;
     text-shadow: none;
     text-decoration: none;
-    line-height: 35px;
-    box-shadow: 0px 0px 5px rgb(88, 88, 88);
+  
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
     margin-top: 40px;
     border-radius: 4px;
     transition: 300ms all;
 }
 
 .btn-white:hover{
-    background: #444;
-    color:white;
+    background: rgb(7, 7, 7);
+    color:rgb(7, 7, 7);
 }
 
 #slider.slider-small{
