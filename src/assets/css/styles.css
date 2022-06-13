@@ -848,3 +848,18 @@ span {
   @media (min-width: 900px) {
     .cards { grid-template-columns: repeat(3, 1fr); }
   }
+
+
+  /* each-slide*/
+
+  .eachslide > div {
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;      
+    width: 600px;
+   
+  }
+  

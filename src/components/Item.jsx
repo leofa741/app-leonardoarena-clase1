@@ -1,7 +1,15 @@
 import React, { useState } from "react";
-import {Box,Typography,Card,CardMedia,CardActionArea,Grid,} from "@mui/material";
+import {
+  Box,
+  Typography,
+  Card,
+  CardMedia,
+  CardActionArea,
+  Grid,
+} from "@mui/material";
 import { useMemo } from "react";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 function Item({ id, name, images, title, description, price, inStock }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,19 +29,29 @@ function Item({ id, name, images, title, description, price, inStock }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Card>
-        <CardActionArea>
-          <CardMedia component="img" image={productImage} alt={name} />
-        </CardActionArea>
+        <Link to={`/producdetails/${id}`}>
+          <CardActionArea>
+            <CardMedia component="img" image={productImage} alt={name} />
+          </CardActionArea>
+          <Box sx={{ mt: 1 }} className="fadeIn">
+            {isHovered ? (
+              <Typography>Ver Producto</Typography>
+            ) : (
+              <Typography>Máss...</Typography>
+            )}
+          </Box>
+        </Link>
       </Card>
 
       <Box sx={{ mt: 1 }} className="fadeIn">
+        <Typography>id:{id}</Typography>
         <Typography>$:{price}</Typography>
         <Typography>{title}</Typography>
+
         <ItemCount stock={inStock} initial={1} onAdd={() => {}}></ItemCount>
       </Box>
-     <br></br>
+      <br></br>
     </Grid>
-            
   );
 }
 export default Item;

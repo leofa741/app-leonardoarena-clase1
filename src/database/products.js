@@ -4,7 +4,7 @@
 
     const   productos= [
         {
-            id: 1,
+            id: 0,
             description: "Introducing the Tesla Chill Collection. The Men’s Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.",
             images: [
                 '../products/1740176-00-A_0_2000.jpg',
@@ -20,7 +20,7 @@
             gender: 'men'
         },
         {
-            id: 2,
+            id: 1,
             description: "The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.",
             images: [
                 '../products/1740507-00-A_0_2000.jpg',
@@ -37,7 +37,7 @@
         },
         
         {
-            id: 3,
+            id: 2,
             description: "Introducing the Tesla Raven Collection. The Men's Raven Lightweight Zip Up Bomber has a premium, modern silhouette made from a sustainable bamboo cotton blend for versatility in any season. The hoodie features subtle thermoplastic polyurethane Tesla logos on the left chest and below the back collar, a concealed chest pocket with custom matte zipper pulls and a french terry interior. Made from 70% bamboo and 30% cotton.",
             images: [
                 '../products/1740250-00-A_0_2000.jpg',
@@ -54,7 +54,7 @@
         },
 
         {
-            id: 4,
+            id: 3,
             description: "Introducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the Men's Turbine Long Sleeve Tee features a subtle, water-based T logo on the left chest and our Tesla wordmark below the back collar. The lightweight material is double-dyed, creating a soft, casual style for ideal wear in any season. Made from 50% cotton and 50% polyester.",
             images: [
                 '../products/1740280-00-A_0_2000.jpg',
@@ -70,7 +70,7 @@
             gender: 'men'
         },
         {
-            id: 5,
+            id: 4,
             description: "Introducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the Men's Turbine Short Sleeve Tee features a subtle, water-based Tesla wordmark across the chest and our T logo below the back collar. The lightweight material is double-dyed, creating a soft, casual style for ideal wear in any season. Made from 50% cotton and 50% polyester.",
             images: [
                 '../products/1741416-00-A_0_2000.jpg',
@@ -86,7 +86,7 @@
             gender: 'men'
         },
         {
-            id: 6,
+            id: 5,
             description: "Designed for comfort, the Cybertruck Owl Tee is made from 100% cotton and features our signature Cybertruck icon on the back.",
             images: [
                 '../products/7654393-00-A_2_2000.jpg',
@@ -102,7 +102,7 @@
             gender: 'men'
         },
         {
-            id: 7,
+            id: 6,
             description: "Inspired by our fully integrated home solar and storage system, the Tesla Solar Roof Tee advocates for clean, sustainable energy wherever you go. Designed for fit, comfort and style, the tee features an aerial view of our seamless Solar Roof design on the front with our signature T logo above 'Solar Roof' on the back. Made from 100% Peruvian cotton.",
             images: [
                 '../products/1703767-00-A_0_2000.jpg',
@@ -118,7 +118,7 @@
             gender: 'men'
         },
         {
-            id: 8,
+            id: 7,
             description: "Inspired by the world’s most unlimited resource, the Let the Sun Shine Tee highlights our fully integrated home solar and storage system. Designed for fit, comfort and style, the tee features a sunset graphic along with our Tesla wordmark on the front and our signature T logo printed above 'Solar Roof' on the back. Made from 100% Peruvian cotton.",
             images: [
                 '../products/1700280-00-A_0_2000.jpg',
@@ -134,7 +134,7 @@
             gender: 'men'
         },
         {
-            id: 9,
+            id: 8,
             description: "Designed for fit, comfort and style, the Men's 3D Large Wordmark Tee is made from 100% Peruvian cotton with a 3D silicone-printed Tesla wordmark printed across the chest.",
             images: [
                 '../products/8764734-00-A_0_2000.jpg',
@@ -150,7 +150,7 @@
             gender: 'men'
         },
         {
-            id: 10,
+            id: 9,
             description: "Designed for fit, comfort and style, the Tesla T Logo Tee is made from 100% Peruvian cotton and features a silicone-printed T Logo on the left chest.",
             images: [
                 '../products/7652426-00-A_0_2000.jpg',
@@ -166,7 +166,7 @@
             gender: 'men'
         },
         {
-            id: 11,
+            id: 10,
             description: "Designed for comfort and style in any size, the Tesla Small Wordmark Tee is made from 100% Peruvian cotton and features a 3D silicone-printed wordmark on the left chest.",
             images: [
                 '../products/8528839-00-A_0_2000.jpg',
@@ -182,7 +182,7 @@
             gender: 'men'
         },
         {
-            id: 12,
+            id: 11,
             description: "Designed to celebrate Tesla's incredible performance mode, the Plaid Mode Tee features great fit, comfort and style. Made from 100% cotton, it's the next best thing to riding shotgun at the Nürburgring.",
             images: [
                 '../products/1549268-00-A_0_2000.jpg',
@@ -198,7 +198,7 @@
             gender: 'men'
         },
         {
-            id: 13,
+            id: 12,
             description: "Inspired by our popular home battery, the Tesla Powerwall Tee is made from 100% cotton and features the phrase 'Pure Energy' under our signature logo in the back. Designed for fit, comfort and style, the exclusive tee promotes sustainable energy in any environment.",
             images: [
                 '../products/9877034-00-A_0_2000.jpg',
@@ -214,7 +214,7 @@
             gender: 'men'
         },
         {
-            id: 14,
+            id: 13,
             description: "Inspired by Tesla Battery Day and featuring the unveiled tabless battery cell, Battery Day Tee celebrates the future of energy storage and cell manufacturing. Designed for fit, comfort and style, Battery Day Tee is made from 100% cotton with a stylized cell printed across the chest. Made in Peru.",
             images: [
                 '../products/1633802-00-A_0_2000.jpg',
@@ -230,7 +230,7 @@
             gender: 'men'
         },
         {
-            id: 15,
+            id: 14,
             description: "Designed for exceptional comfort and inspired by the Cybertruck unveil event, the Cybertruck Bulletproof Tee is made from 100% cotton and features our signature Cybertruck icon on the back.",
             images: [
                 '../products/7654399-00-A_0_2000.jpg',
@@ -246,7 +246,7 @@
             gender: 'men'
         },
         {
-            id: 16,
+            id: 15,
             description: "Inspired by the Model Y order confirmation graphic, the limited edition Haha Yes Tee is designed for comfort and style. Made from 100% Peruvian cotton and featuring the Tesla wordmark across the chest, the exclusive tee will commemorate your order for years to come.",
             images: [
                 '../products/7652410-00-A_0.jpg',
@@ -262,7 +262,7 @@
             gender: 'men'
         },
         {
-            id: 17,
+            id: 16,
             description: "Designed for fit, comfort and style, the limited edition S3XY Tee is made from 100% cotton with a 3D silicone-printed “S3XY” logo across the chest. Made in Peru. Available in black.",
             images: [
                 '../products/8764600-00-A_0_2000.jpg',
@@ -278,7 +278,7 @@
             gender: 'men'
         },
         {
-            id: 18,
+            id: 17,
             description: "Designed for fit, comfort and style, the Men's 3D Wordmark Long Sleeve Tee is made from 100% cotton and features an understated wordmark logo on the left chest.",
             images: [
                 '../products/8764813-00-A_0_2000.jpg',
@@ -294,7 +294,7 @@
             gender: 'men'
         },
         {
-            id: 19,
+            id: 18,
             description: "Designed for fit, comfort and style, the Men's 3D T Logo Long Sleeve Tee is made from 100% cotton and features an understated T logo on the left chest.",
             images: [
                 '../products/8529198-00-A_0_2000.jpg',
@@ -310,7 +310,7 @@
             gender: 'men'
         },
         {
-            id: 20,
+            id: 19,
             description: "Introducing the Tesla Raven Collection. The Men's Raven Lightweight Hoodie has a premium, relaxed silhouette made from a sustainable bamboo cotton blend. The hoodie features subtle thermoplastic polyurethane Tesla logos across the chest and on the sleeve with a french terry interior for versatility in any season. Made from 70% bamboo and 30% cotton.",
             images: [
                 '../products/1740245-00-A_0_2000.jpg',
@@ -326,7 +326,7 @@
             gender: 'men'
         },
         {
-            id: 21,
+            id: 20,
             description: "Introducing the Tesla Chill Collection. The Chill Pullover Hoodie has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The unisex hoodie features subtle thermoplastic polyurethane Tesla logos across the chest and on the sleeve, a double layer single seam hood and pockets with custom matte zipper pulls. Made from 60% cotton and 40% recycled polyester.",
             images: [
                 '../products/1740051-00-A_0_2000.jpg',
@@ -342,7 +342,7 @@
             gender: 'unisex'
         },
         {
-            id: 22,
+            id: 21,
             description: "Introducing the Tesla Chill Collection. The Men's Chill Full Zip Hoodie has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The hoodie features subtle thermoplastic polyurethane Tesla logos on the left chest and sleeve, a double layer single seam hood and pockets with custom matte zipper pulls. Made from 60% cotton and 40% recycled polyester.",
             images: [
                 '../products/1741111-00-A_0_2000.jpg',
@@ -358,7 +358,7 @@
             gender: 'men'
         },
         {
-            id: 23,
+            id: 22,
             description: "Introducing the Tesla Chill Collection. The Men’s Chill Quarter Zip Pullover has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The pullover features subtle thermoplastic polyurethane Tesla logos on the left chest and below the back collar, as well as a custom matte zipper pull. Made from 60% cotton and 40% recycled polyester.",
             images: [
                 '../products/1740140-00-A_0_2000.jpg',
@@ -374,7 +374,7 @@
             gender: 'men'
         },
         {
-            id: 24,
+            id: 23,
             description: "Introducing the Tesla Chill Collection. The Men’s Chill Quarter Zip Pullover has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The pullover features subtle thermoplastic polyurethane Tesla logos on the left chest and below the back collar, as well as a custom matte zipper pull. Made from 60% cotton and 40% recycled polyester.",
             images: [
                 '../products/1740145-00-A_2_2000.jpg',
@@ -390,7 +390,7 @@
             gender: 'men'
         },
         {
-            id: 25,
+            id: 24,
             description: "The Unisex 3D Large Wordmark Pullover Hoodie features soft fleece and an adjustable, jersey-lined hood for comfort and coverage. Designed in a unisex style, the pullover hoodie includes a tone-on-tone 3D silicone-printed wordmark across the chest.",
             images: [
                 '../products/8529107-00-A_0_2000.jpg',
@@ -406,7 +406,7 @@
             gender: 'unisex'
         },
         {
-            id: 26,
+            id: 25,
             description: "As with the iconic Tesla logo, the Cybertruck Graffiti Hoodie is a classic in the making. Unisex style featuring soft fleece and an adjustable, jersey-lined hood for comfortable coverage.",
             images: [
                 '../products/7654420-00-A_0_2000.jpg',
@@ -422,7 +422,7 @@
             gender: 'unisex'
         },
         {
-            id: 27,
+            id: 26,
             description: "The Relaxed T Logo Hat is a classic silhouette combined with modern details, featuring a 3D T logo and a custom metal buckle closure. The ultrasoft design is flexible and abrasion resistant, while the inner sweatband includes quilted padding for extra comfort and moisture wicking. The visor is fully made from recycled plastic bottles. 100% Cotton.",
             images: [
                 '../products/1657932-00-A_0_2000.jpg',
@@ -438,7 +438,7 @@
             gender: 'unisex'
         },
         {
-            id: 28,
+            id: 27,
             description: "The Relaxed T Logo Hat is a classic silhouette combined with modern details, featuring a 3D T logo and a custom metal buckle closure. The ultrasoft design is flexible and abrasion resistant, while the inner sweatband includes quilted padding for extra comfort and moisture wicking. The visor is fully made from recycled plastic bottles. 100% Cotton.",
             images: [
                 '../products/1740417-00-A_0_2000.jpg',
@@ -454,7 +454,7 @@
             gender: 'unisex'
         },
         {
-            id: 29,
+            id: 28,
             description: "The Women's Cropped Puffer Jacket features a uniquely cropped silhouette for the perfect, modern style while on the go during the cozy season ahead. The puffer features subtle silicone injected Tesla logos below the back collar and on the right sleeve, custom matte metal zipper pulls and a soft, fleece lined collar. Made from 87% nylon and 13% polyurethane.",
             images: [
                 '../products/1740535-00-A_0_2000.jpg',
@@ -470,7 +470,7 @@
             gender: 'women'
         },
         {
-            id: 30,
+            id: 29,
             description: "Introducing the Tesla Chill Collection. The Women's Chill Half Zip Cropped Hoodie has a premium, soft fleece exterior and cropped silhouette for comfort in everyday lifestyle. The hoodie features an elastic hem that gathers at the waist, subtle thermoplastic polyurethane Tesla logos along the hood and on the sleeve, a double layer single seam hood and a custom ring zipper pull. Made from 60% cotton and 40% recycled polyester.",
             images: [
                 '../products/1740226-00-A_0_2000.jpg',
@@ -486,7 +486,7 @@
             gender: 'women'
         },
         {
-            id: 31,
+            id: 30,
             description: "Introducing the Tesla Raven Collection. The Women's Raven Slouchy Crew Sweatshirt has a premium, relaxed silhouette made from a sustainable bamboo cotton blend. The slouchy crew features a subtle thermoplastic polyurethane Tesla wordmark on the left sleeve and a french terry interior for a cozy look and feel in every season. Pair it with your Raven Joggers or favorite on the go fit. Made from 70% bamboo and 30% cotton.",
             images: [
                 '../products/1740260-00-A_0_2000.jpg',
@@ -502,7 +502,7 @@
             gender: 'women'
         },
         {
-            id: 32,
+            id: 31,
             description: "Introducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the Women's Turbine Cropped Long Sleeve Tee features a subtle, water-based Tesla wordmark across the chest and our T logo below the back collar. The lightweight material is double-dyed, creating a soft, casual style with a cropped silhouette. Made from 50% cotton and 50%",
             images: [
                 '../products/1740290-00-A_0_2000.jpg',
@@ -518,7 +518,7 @@
             gender: 'women'
         },
         {
-            id: 33,
+            id: 32,
             description: "ntroducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the Women's Turbine Cropped Short Sleeve Tee features a subtle, water-based Tesla wordmark across the chest and our T logo below the back collar. The lightweight material is double-dyed, creating a soft, casual style with a cropped silhouette. Made from 50% cotton and 50% polyester.",
             images: [
                 '../products/1741441-00-A_0_2000.jpg',
@@ -534,7 +534,7 @@
             gender: 'women'
         },
         {
-            id: 34,
+            id: 33,
             description: "Designed for style and comfort, the ultrasoft Women's T Logo Short Sleeve Scoop Neck Tee features a tonal 3D silicone-printed T logo on the left chest. Made of 50% Peruvian cotton and 50% Peruvian viscose.",
             images: [
                 '../products/8765090-00-A_0_2000.jpg',
@@ -550,7 +550,7 @@
             gender: 'women'
         },
         {
-            id: 35,
+            id: 34,
             description: "Designed for style and comfort, the ultrasoft Women's T Logo Long Sleeve Scoop Neck Tee features a tonal 3D silicone-printed T logo on the left chest. Made of 50% Peruvian cotton and 50% Peruvian viscose.",
             images: [
                 '../products/8765100-00-A_0_2000.jpg',
@@ -566,7 +566,7 @@
             gender: 'women'
         },
         {
-            id: 36,
+            id: 35,
             description: "Designed for style and comfort, the Women's Small Wordmark Short Sleeve V-Neck Tee features a tonal 3D silicone-printed wordmark on the left chest. Made of 100% Peruvian cotton.",
             images: [
                 '../products/8765120-00-A_0_2000.jpg',
@@ -582,7 +582,7 @@
             gender: 'women'
         },
         {
-            id: 37,
+            id: 36,
             description: "Designed for style and comfort, the Women's Large Wordmark Short Sleeve Crew Neck Tee features a tonal 3D silicone-printed wordmark across the chest. Made of 100% Peruvian pima cotton.",
             images: [
                 '../products/8765115-00-A_0_2000.jpg',
@@ -598,7 +598,7 @@
             gender: 'women'
         },
         {
-            id: 38,
+            id: 37,
             description: "Designed to celebrate Tesla's incredible performance mode, the Plaid Mode Tee features great fit, comfort and style. Made from 100% cotton, it's the next best thing to riding shotgun at the Nürburgring.",
             images: [
                 '../products/1549275-00-A_0_2000.jpg',
@@ -614,7 +614,7 @@
             gender: 'women'
         },
         {
-            id: 39,
+            id: 38,
             description: "Inspired by our popular home battery, the Tesla Powerwall Tee is made from 100% cotton and features the phrase 'Pure Energy' under our signature logo in the back. Designed for fit, comfort and style, the exclusive tee promotes sustainable energy in any",
             images: [
                 '../products/9877040-00-A_0_2000.jpg',
@@ -630,7 +630,7 @@
             gender: 'women'
         },
         { 
-            id: 40,
+            id: 39,
             description: "Fully customized and uniquely styled, the Women's Corp Jacket features a silicone-printed 'T' logo on the left chest and prominent Tesla wordmark across the back.",
             images: [
                 '../products/5645680-00-A_0_2000.jpg',
@@ -646,7 +646,7 @@
             gender: 'women'
         },
         {
-            id: 41,
+            id: 40,
             description: "Introducing the Tesla Raven Collection. The Women's Raven Joggers have a premium, relaxed silhouette made from a sustainable bamboo cotton blend. The joggers feature a subtle thermoplastic polyurethane Tesla wordmark and T logo and a french terry interior for a cozy look and feel in every season. Pair them with your Raven Slouchy Crew Sweatshirt, Raven Lightweight Zip Up Jacket or other favorite on the go fit. Made from 70% bamboo and 30% cotton.",
             images: [
                 '../products/1740270-00-A_0_2000.jpg',
@@ -662,7 +662,7 @@
             gender: 'women'
         },
         {
-            id: 42,
+            id: 41,
             description: "Designed for fit, comfort and style, the Kids Cybertruck Graffiti Long Sleeve Tee features a water-based Cybertruck graffiti wordmark across the chest, a Tesla wordmark down the left arm and our signature T logo on the back collar. Made from 50% cotton and 50% polyester.",
             images: [
                 '../products/1742694-00-A_1_2000.jpg',
@@ -678,7 +678,7 @@
             gender: 'kid'
         },
         {
-            id: 43,
+            id: 42,
             description: "The Kids Scribble T Logo Tee is made from 100% Peruvian cotton and features a Tesla T sketched logo for every young artist to wear.",
             images: [
                 '../products/8529312-00-A_0_2000.jpg',
@@ -694,7 +694,7 @@
             gender: 'kid'
         },
         {
-            id: 44,
+            id: 43,
             description: "The Kids Cybertruck Tee features the iconic Cybertruck graffiti wordmark and is made from 100% Peruvian cotton for maximum comfort.",
             images: [
                 '../products/8529342-00-A_0_2000.jpg',
@@ -710,7 +710,7 @@
             gender: 'kid'
         },
         {
-            id: 45,
+            id: 44,
             description: "The refreshed Kids Racing Stripe Tee is made from 100% Peruvian cotton, featuring a newly enhanced racing stripe with a brushed Tesla wordmark that's perfect for any speed racer.",
             images: [
                 '../products/8529354-00-A_0_2000.jpg',
@@ -726,7 +726,7 @@
             gender: 'kid'
         },
         {
-            id: 46,
+            id: 45,
             description: "Designed for fit, comfort and style, the Tesla T Logo Tee is made from 100% Peruvian cotton and features a silicone-printed T Logo on the left chest.",
             images: [
                 '../products/7652465-00-A_0_2000.jpg',
@@ -742,7 +742,7 @@
             gender: 'kid'
         },
         {
-            id: 47,
+            id: 46,
             description: "The checkered tee is made from long grain, GMO free Peruvian cotton. Peru is the only country in the world where cotton is picked by hand on a large scale. The 4,500-year-old tradition prevents damage to the fiber during the picking process and removes the need to use chemicals to open the cotton plants before harvest. This environmentally friendly process results in cotton that is soft, strong, and lustrous – and the tee will get even softer with every wash.",
             images: [
                 '../products/100042307_0_2000.jpg',
@@ -758,7 +758,7 @@
             gender: 'kid'
         },
         {
-            id: 48,
+            id: 47,
             description: "For the future space traveler with discerning taste, a soft, cotton onesie with snap closure bottom. Clear labeling provided in case of contact with a new spacefaring civilization. 100% Cotton. Made in Peru",
             images: [
                 '../products/1473809-00-A_1_2000.jpg',
@@ -774,7 +774,7 @@
             gender: 'kid'
         },
         {
-            id: 49,
+            id: 48,
             description: "The Kids Scribble T Logo Onesie is made from 100% Peruvian cotton and features a Tesla T sketched logo for every little artist to wear.",
             images: [
                 '../products/8529387-00-A_0_2000.jpg',
@@ -790,7 +790,7 @@
             gender: 'kid'
         },
         {
-            id: 50,
+            id: 49,
             description: "Show your commitment to sustainable energy with this cheeky onesie for your young one. Note: Does not prevent emissions. 100% Cotton. Made in Peru.",
             images: [
                 '../products/1473834-00-A_2_2000.jpg',
@@ -806,7 +806,7 @@
             gender: 'kid'
         },
         {
-            id: 51,
+            id: 50,
             description: "Wear your Kids Cyberquad Bomber Jacket during your adventures on Cyberquad for Kids. The bomber jacket features a graffiti-style illustration of our Cyberquad silhouette and wordmark. With three zippered pockets and our signature T logo and Tesla wordmark printed along the sleeves, Kids Cyberquad Bomber Jacket is perfect for wherever the trail takes you. Made from 60% cotton and 40% polyester.",
             images: [
                 '../products/1742702-00-A_0_2000.jpg',
@@ -822,7 +822,7 @@
             gender: 'kid'
         },
         {
-            id: 52,
+            id: 51,
             description: "Cruise the playground in style with the Kids Corp Jacket. Modeled after the original Tesla Corp Jacket, the Kids Corp Jacket features the same understated style and high-quality materials but at a pint-sized scale.",
             images: [
                 '../products/1506211-00-A_0_2000.jpg',
@@ -837,5 +837,7 @@
             title: "Kids Corp Jacket",
             gender: 'kid'
         },
-    ]
-export default productos
+    ];
+
+  export default productos
+

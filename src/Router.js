@@ -8,14 +8,16 @@ import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import CarWidget from "./components/CarWidget";
+
+import ItemDetailContainer from "./components/ItemDetailContainer";
 const Router = () => {
 
  
         return(
            <BrowserRouter>
 
-<Header></Header>
-<Slider></Slider>
+<Header/>
+<Slider/>
 
 <div className="center">
            <Routes>
@@ -24,6 +26,7 @@ const Router = () => {
                 <Route exact path="/about" element={<About/>} />
                 <Route exact path="/ItemListContainer" element={<ItemListContainer title=" Bienvenios a Nuestro E-Shop"/>} />
                 <Route exact path="/shop" element={<CarWidget  />} />
+                <Route exact path="/producdetails/:id" element={<ItemDetailContainer id={2} />} />
 
                 <Route path="*" element={<Error/>} />
 
@@ -32,7 +35,7 @@ const Router = () => {
            <div className="clearfix"></div>
 </div>
 
-<Footer></Footer>
+<Footer/>
 
    
            </BrowserRouter>

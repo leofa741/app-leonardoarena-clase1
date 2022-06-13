@@ -3,8 +3,6 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 
-
-
 const Home = () => {
 
   
@@ -14,16 +12,9 @@ const Home = () => {
               <div className="about__contenido">
                   <h1 className="about__titulo">
                       Bienvenido al Home del  AppStore
-                  </h1>
-                  <p className="about__descripcion">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
-                  </p>
-                  <p className="about__descripcion">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
-                  </p>
-                  <p className="about__descripcion">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
-                  </p>
+                  </h1>         
+              
+                
                   <Link to="/shop">Ir al Shop </Link>
               </div>
           </div>

@@ -3,7 +3,7 @@ import logo from "../assets/images/react.svg";
 
 
 import NavBar from "./NavBar";
-import { SideMenu } from "./SideMenu";
+
 
 
 
@@ -24,7 +24,7 @@ const Header = () => {
               </div>
              
               <NavBar/>
-              <SideMenu/>
+         
             
 
               <div className="clearfix"></div>
