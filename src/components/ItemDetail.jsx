@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid} from "@mui/material";
 
 import ItemCount from "./ItemCount";
 import productos from "../database/products";
@@ -7,6 +7,10 @@ import { useParams } from "react-router-dom";
 
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
+import {SelectedSizes} from "./SelectedSizes";
+
+
+
 
 const ItemDetail = () => {
   const id = useParams().id;
@@ -39,12 +43,19 @@ const ItemDetail = () => {
         <Box display="flex" flexDirection="column">
           <Typography>$:{product.price}</Typography>
           <Typography>{product.title}</Typography>
+          <SelectedSizes SelectedSize={product.sizes[0]} sizes={product.sizes} ></SelectedSizes>
           <ItemCount
             stock={product.inStock}
             initial={1}
             onAdd={() => {}}
-          ></ItemCount>
+          >
+
+          </ItemCount>
+
+<Box>
         </Box>
+     
+          </Box>
         <Box sx={{ my: 3 }}>
           <Typography>{product.description}</Typography>
         </Box>
