@@ -641,21 +641,22 @@ textarea{
     height: 400px;
 }
 .a1 {
-    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+ 
+    background-image:url("../../../public/products/1473809-00-A_1_2000.jpg");
 }
 .a2 {
-    background-image: url("https://images.pexels.com/photos/240038/pexels-photo-240038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    background-image: url("../../../public/products/1657932-00-A_1.jpg");
 }
 .a3 {
-    background-image: url("https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("../../../public/products/8529348-00-A_1.jpg");
     color: #fff;
 }
 .a4 {
-    background-image: url("https://images.pexels.com/photos/240038/pexels-photo-240038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("../../../public/products/100042307_alt_2000.jpg");
     color: #fff;
 }
 .a5 {
-    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+    background-image: url("../../../public/products/8765110-00-A_1.jpg");
 }
 
 .text {

@@ -35,7 +35,7 @@ function Item({ id, name, images, title, description, price, inStock }) {
           </CardActionArea>
           <Box sx={{ mt: 1 }} className="fadeIn">
             {isHovered ? (
-              <Typography>Ver Producto</Typography>
+              <Typography>Ver Detalle</Typography>
             ) : (
               <Typography>Máss...</Typography>
             )}
