@@ -75,8 +75,8 @@ body {
     display: inline-block;
     list-style: none;
     height: 46px;
-    margin-left: 10px;
-    margin-right: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #menu a{

@@ -32,7 +32,7 @@ const NavBar = () => {
             </li>
             <li>
               <Button>            
-                <NavLink to="/ItemListContainer">Productos</NavLink>{" "}
+                <NavLink to="/ItemListContainer">Products</NavLink>{" "}
               </Button>
             </li>
 
