@@ -8,7 +8,7 @@ const CarWidget = (props) => {
   if (props.menu) {
     return (
       <div id="logocart">
-        <NavLink to="/shop">
+        <NavLink to="/shoppingcart">
           <Badge badgeContent={2} color="primary">
             <ShoppingCartIcon />
           </Badge>

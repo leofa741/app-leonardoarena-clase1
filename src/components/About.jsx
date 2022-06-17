@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+
 
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
                         <p className="about__descripcion">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel pretium varius, nisl nunc egestas elit, sed semper erat nunc euismod nunc.
                         </p>
-                        <Link to="/shop">Ir al Shop </Link>
+                      
                     </div>
                 </div>
             </div>

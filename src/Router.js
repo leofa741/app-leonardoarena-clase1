@@ -21,11 +21,10 @@ const Router = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/ItemListContainer" element={<ItemListContainer title=" Bienvenios a Nuestro E-Shop" />}/>
-          <Route exact path="/shop" element={<CarWidget />} />
-          <Route exact path="/producdetails/:id" element={<ItemDetailContainer  />} />
-          <Route exact path="/category/:gender" element={<ItemListContainer  title="Catalogo de :" />} />
-
+          <Route exact path="/ItemListContainer" element={<ItemListContainer title=" Welcome to Our E-Shop" />}/>
+          <Route exact path="/category/:gender" element={<ItemListContainer  title="catalog of :" />} />
+          <Route exact path="/producdetails/:id" element={<ItemDetailContainer  />} />      
+          <Route exact path="/shoppingcart" element={<CarWidget />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <div className="clearfix"></div>

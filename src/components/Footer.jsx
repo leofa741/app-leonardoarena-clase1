@@ -18,7 +18,7 @@ const Footer = () => {
 
           <Link to="/ItemListContainer">Productos </Link>
 
-          <Link to="/shop">Carrito</Link>
+       
         </p>
 
         <p className="footer-company-name">Company Name © 2015</p>

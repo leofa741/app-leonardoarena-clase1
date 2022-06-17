@@ -15,7 +15,7 @@ const Home = () => {
                   </h1>         
               
                 
-                  <Link to="/shop">Ir al Shop </Link>
+                  <Link to="/shoppingcart">Ir al Shop </Link>
               </div>
           </div>
       </div>

@@ -61,7 +61,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
       <Button variant="contained" size="small">
  
-       Comprar
+       Confirmar
       </Button>
     </Box>
   );
