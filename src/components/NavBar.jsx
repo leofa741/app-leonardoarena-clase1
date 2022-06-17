@@ -1,21 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import CarWidget from "./CarWidget";
-import { Box, Button } from "@mui/material";
+import { Box} from "@mui/material";
 import BasicMenu from "./Menucategoria";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 import HomeIcon from '@mui/icons-material/Home';
 
 
-const theme = createTheme({
-  palette: {
-    Add: {
-      main: "#005c25",    
-    },   
-  },
-});
-
-const NavBar = () => {
+const NavBar = (props) => {
+  const { classes } = props;
   return (
     <>
       <Box>
@@ -23,7 +16,7 @@ const NavBar = () => {
           <ul>
             <li>
                          
-                <NavLink to="/home"> <HomeIcon /></NavLink>
+                <NavLink to="/home"> <HomeIcon sx={{ fontSize: 25,padding: -2 }}  /></NavLink>
               
             </li>
             <li>

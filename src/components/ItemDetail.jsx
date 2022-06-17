@@ -44,6 +44,12 @@ const ItemDetail = () => {
           <Typography>$:{product.price}</Typography>
           <Typography>{product.title}</Typography>
           <SelectedSizes SelectedSize={product.sizes[0]} sizes={product.sizes} ></SelectedSizes>
+          
+          <Typography
+            variant="body2"                  
+            color="textSecondary"
+            component="p"
+          >cantidad</Typography>
           <ItemCount
             stock={product.inStock}
             initial={1}
@@ -51,6 +57,7 @@ const ItemDetail = () => {
           >
 
           </ItemCount>
+        
 
 <Box>
         </Box>

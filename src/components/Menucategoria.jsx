@@ -5,7 +5,10 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Button } from '@mui/material';
-
+import ManIcon from '@mui/icons-material/Man';
+import WomanIcon from '@mui/icons-material/Woman';
+import BoyIcon from '@mui/icons-material/Boy';
+import GirlIcon from '@mui/icons-material/Girl';
 
 
 const theme = createTheme({
@@ -52,9 +55,9 @@ export default function BasicMenu() {
      
        
 
-        <MenuItem onClick={handleClose} component={Link} to={'category/men'}>Men</MenuItem>
-   <MenuItem onClick={handleClose} component={Link} to={'category/women'}>Women</MenuItem>
-   <MenuItem onClick={handleClose} component={Link} to={'category/kid'}>Kids</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={'category/men'}><ManIcon/></MenuItem>
+   <MenuItem onClick={handleClose} component={Link} to={'category/women'}><WomanIcon/></MenuItem>
+   <MenuItem onClick={handleClose} component={Link} to={'category/kid'}><BoyIcon/><GirlIcon/></MenuItem>
       </Menu>
     </div>
   );
