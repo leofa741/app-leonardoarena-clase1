@@ -5,6 +5,7 @@ import ItemDetail from "./ItemDetail";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 
+
 const ItemDetailContainer = (props) => {
   const [item, setItems] = useState([]);
 
@@ -25,6 +26,7 @@ const ItemDetailContainer = (props) => {
   } else {
     return (
       <>
+
         <ItemDetail />
       </>
     );

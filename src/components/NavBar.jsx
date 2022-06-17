@@ -1,39 +1,57 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import CarWidget from './CarWidget'
-import {Box} from '@mui/material'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import CarWidget from "./CarWidget";
+import { Box, Button } from "@mui/material";
+import BasicMenu from "./Menucategoria";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 
-
+const theme = createTheme({
+  palette: {
+    Add: {
+      main: "#005c25",    
+    },   
+  },
+});
 
 const NavBar = () => {
   return (
     <>
- <Box sx={{display:{xs:'block' ,sm:'block'}}}>
-    <nav id="menu">
-  
-      <ul>
-        <li>
-          <NavLink to="/home">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/ItemListContainer">Productos</NavLink>
-        </li>
-     
-        <li>
-          <CarWidget menu="true" ></CarWidget>
-        </li>
+      <Box>
+        <nav id="menu">
+          <ul>
+            <li>
+              <Button>             
+                <NavLink to="/home">Home</NavLink>
+              </Button>
+            </li>
+            <li>
+              <Button>             
+                <NavLink to="/about">About</NavLink>
+              </Button>
+            </li>
+            <li>
+              <Button>            
+                <NavLink to="/ItemListContainer">Productos</NavLink>{" "}
+              </Button>
+            </li>
 
-      
-      </ul>
-    </nav>
-
-    </Box>
-   
-      </>
+            <li>
+              <BasicMenu />
+            </li>
+            <li>
+            <ThemeProvider theme={theme}>
+              <Button 
+                color='Add'  
+              >               
+                <CarWidget menu="true" />{" "}
+              </Button>
+              </ThemeProvider>
+            </li>
+          </ul>
+        </nav>
+      </Box>
+    </>
   );
 };
 

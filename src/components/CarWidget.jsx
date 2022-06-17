@@ -21,7 +21,7 @@ const CarWidget = (props) => {
         <div className="center">
           <div className="item-list-container__contenedor">
             <div className="item-list-container__contenido">
-              <h1 className="item-list-container__titulo"> Carrito </h1>
+              <h1 className="item-list-container__titulo"> shopping cart</h1>
 
               <p className="item-list-container__descripcion">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
