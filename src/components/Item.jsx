@@ -11,7 +11,7 @@ import { useMemo } from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 
-function Item({ id, name, images, title, description, price, inStock }) {
+function Item({ id, name, images, title, description, price, inStock,gender }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const productImage = useMemo(() => {
@@ -44,7 +44,7 @@ function Item({ id, name, images, title, description, price, inStock }) {
       </Card>
 
       <Box sx={{ mt: 1 }} className="fadeIn">
-    
+      <Typography>genero:{gender}</Typography>
         <Typography>$:{price}</Typography>
         <Typography>{title}</Typography>
 

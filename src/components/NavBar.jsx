@@ -4,6 +4,7 @@ import CarWidget from "./CarWidget";
 import { Box, Button } from "@mui/material";
 import BasicMenu from "./Menucategoria";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import HomeIcon from '@mui/icons-material/Home';
 
 
 const theme = createTheme({
@@ -21,32 +22,30 @@ const NavBar = () => {
         <nav id="menu">
           <ul>
             <li>
-              <Button>             
-                <NavLink to="/home">Home</NavLink>
-              </Button>
+                         
+                <NavLink to="/home"> <HomeIcon /></NavLink>
+              
             </li>
             <li>
-              <Button>             
+                        
                 <NavLink to="/about">About</NavLink>
-              </Button>
+             
             </li>
             <li>
-              <Button>            
+                     
                 <NavLink to="/ItemListContainer">Products</NavLink>{" "}
-              </Button>
+            
             </li>
 
             <li>
               <BasicMenu />
             </li>
             <li>
-            <ThemeProvider theme={theme}>
-              <Button 
-                color='Add'  
-              >               
+         
+                         
                 <CarWidget menu="true" />{" "}
-              </Button>
-              </ThemeProvider>
+           
+            
             </li>
           </ul>
         </nav>

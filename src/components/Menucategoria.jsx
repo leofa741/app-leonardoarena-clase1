@@ -52,9 +52,9 @@ export default function BasicMenu() {
      
        
 
-        <MenuItem onClick={handleClose} component={Link} to={'/first'}>Mens</MenuItem>
-   <MenuItem onClick={handleClose} component={Link} to={'/second'}>Women</MenuItem>
-   <MenuItem onClick={handleClose} component={Link} to={'/second'}>Kids</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={'category/men'}>Men</MenuItem>
+   <MenuItem onClick={handleClose} component={Link} to={'category/women'}>Women</MenuItem>
+   <MenuItem onClick={handleClose} component={Link} to={'category/kid'}>Kids</MenuItem>
       </Menu>
     </div>
   );

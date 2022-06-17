@@ -8,7 +8,11 @@ function ItemList ({products}) {
   return (
      
   <Grid container spacing={4} >
-      {
+   
+   
+        {    
+
+
          products.map(prod => 
              <Item
                 key={prod.name}
@@ -19,9 +23,13 @@ function ItemList ({products}) {
                 price={prod.price}            
                 title={prod.title}  
                 inStock={prod.inStock}
+                gender={prod.gender}
                 />               
             )
+           
          }
+
+
             </Grid>
             
             )

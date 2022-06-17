@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import productos from "../database/products";
-import customFetch from "../database/customfetch";
+import {customFetch} from "../database/customfetch";
 import ItemDetail from "./ItemDetail";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
@@ -20,7 +20,7 @@ const ItemDetailContainer = (props) => {
           <h2>Cargando Detalle Articulo... </h2>
           <LinearProgress />
           <br></br>
-        </Box>
+        </Box> 
       </div>
     );
   } else {
