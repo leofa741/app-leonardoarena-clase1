@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Grid} from "@mui/material";
+import { Box, Typography, Grid,Button,IconButton} from "@mui/material";
 
 import ItemCount from "./ItemCount";
 import productos from "../database/products";
@@ -57,12 +57,16 @@ const ItemDetail = () => {
           >
 
           </ItemCount>
+
+      
         
 
-<Box>
-        </Box>
      
           </Box>
+          
+          <Box sx={{ my: 2 }}>
+          <Button variant="contained" size="small">Terminar Compra</Button>
+        </Box>
         <Box sx={{ my: 3 }}>
           <Typography>{product.description}</Typography>
         </Box>
