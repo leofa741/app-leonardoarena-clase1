@@ -36,6 +36,12 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       setCount(count - 1);
     }
   };
+ 
+  onAdd(count);
+
+  
+
+
 
   return (
     <Box>
@@ -59,10 +65,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       </ButtonGroup>
       <br />
 
-      <Button variant="contained" size="small">
- 
-       Confirmar
-      </Button>
+      <Button 
+      onClick={() => onAdd(count)}          
+       variant="contained" size="small"> Confirmar  </Button>
+
     </Box>
   );
 };

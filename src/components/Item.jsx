@@ -8,7 +8,7 @@ import {
   Grid,
 } from "@mui/material";
 import { useMemo } from "react";
-import ItemCount from "./ItemCount";
+
 import { Link } from "react-router-dom";
 
 function Item({ id, name, images, title, description, price, inStock,gender }) {
@@ -48,7 +48,7 @@ function Item({ id, name, images, title, description, price, inStock,gender }) {
         <Typography>$:{price}</Typography>
         <Typography>{title}</Typography>
 
-        <ItemCount stock={inStock} initial={1} onAdd={() => {}}></ItemCount>
+   
       </Box>
       <br></br>
     </Grid>
