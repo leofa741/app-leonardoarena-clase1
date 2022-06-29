@@ -10,12 +10,16 @@ import Footer from "./components/Footer";
 import CarWidget from "./components/CarWidget";
 
 import ItemDetailContainer from "./components/ItemDetailContainer";
+import { SideMenu } from "./components/SideMenu";
+
 const Router = () => {
   return (
     <BrowserRouter>
+
       <Header />
       <Slider />
-
+   
+<SideMenu/>
       <div className="center">
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -31,6 +35,8 @@ const Router = () => {
       </div>
 
       <Footer />
+
+     
     </BrowserRouter>
   );
 };

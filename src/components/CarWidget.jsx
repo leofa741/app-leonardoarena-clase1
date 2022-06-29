@@ -10,7 +10,7 @@ const CarWidget = (props) => {
       <div id="logocart">
         <NavLink to="/shoppingcart">
           <Badge badgeContent={2} color="primary">
-            <ShoppingCartIcon />
+            <ShoppingCartIcon fontSize="small" />
           </Badge>
         </NavLink>
       </div>

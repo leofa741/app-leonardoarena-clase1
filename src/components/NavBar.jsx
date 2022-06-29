@@ -1,16 +1,19 @@
-import React from "react";
+import {React} from "react";
 import { NavLink } from "react-router-dom";
 import CarWidget from "./CarWidget";
-import { Box } from "@mui/material";
 import BasicMenu from "./Menucategoria";
+import { Box,IconButton  } from "@mui/material";
 
+import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from "@mui/icons-material/Home";
 
-const NavBar = () => {
+const NavBar = (props) => {
+
 
   return (
     <>
-      <Box>
+   
+         <Box  sx={{ display:{ xs:'none',sm:'block'}}} >
         <nav id="menu">
           <ul>
             <li>
@@ -31,6 +34,23 @@ const NavBar = () => {
             </li>
             <li>
               <CarWidget menu="true" />{" "}
+            </li>
+           
+          </ul>
+        </nav>
+      </Box>
+      <Box  sx={{ display:{ xs:'block',sm:'none'}}} >
+        <nav id="menu">
+          <ul>
+         
+            <li>
+           
+               <IconButton 
+               onClick={props.clickcerrar}
+             
+               color="primary" aria-label="Menu" component="span">
+               <MenuIcon></MenuIcon>
+        </IconButton>
             </li>
           </ul>
         </nav>

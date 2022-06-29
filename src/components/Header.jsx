@@ -1,9 +1,17 @@
 import React from "react";
 import logo from "../assets/images/react.svg";
 
-import NavBar from "./NavBar";
+
+import AccountMenu from "./NavBar_1";
+
 
 const Header = () => {
+
+
+ 
+
+
+
   return (
     <header id="header">
       <div className="center">
@@ -14,7 +22,8 @@ const Header = () => {
           </span>
         </div>
 
-        <NavBar />
+      
+        <AccountMenu/>
 
         <div className="clearfix"></div>
       </div>
