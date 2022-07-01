@@ -11,11 +11,14 @@ import CarWidget from "./components/CarWidget";
 
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import { SideMenu } from "./components/SideMenu";
+import {UserProvider} from './context/UserProvider'
 
 const Router = () => {
   return (
-    <BrowserRouter>
 
+ 
+    <BrowserRouter>
+   <UserProvider>
       <Header />
       <Slider />
    
@@ -36,8 +39,10 @@ const Router = () => {
 
       <Footer />
 
-     
+      </UserProvider>
     </BrowserRouter>
+
+   
   );
 };
 

@@ -22,6 +22,18 @@ setTimeout(()=>{
     
 }
 
+export const fetchProductBycart = (time,id) => {
+    return new Promise (resolve =>{
+setTimeout(()=>{
+    resolve(productos.filter(prod=> prod.id===id))
+},time);
+
+    });
+    
+}
+
+
+
 
 
 

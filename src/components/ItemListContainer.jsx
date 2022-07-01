@@ -30,7 +30,7 @@ const ItemListContainer = (props) => {
         </h1>
 
         <Box sx={{ width: "100%" }}>
-          <h2>Cargando Articulos... </h2>
+          <h2>Cargando Articulos... </h2> 
           <LinearProgress />
           <br></br>
         </Box>

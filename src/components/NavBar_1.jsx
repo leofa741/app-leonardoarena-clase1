@@ -21,6 +21,9 @@ import MaleIcon from '@mui/icons-material/Male';
 import FemaleIcon from '@mui/icons-material/Female';
 import WcIcon from '@mui/icons-material/Wc';
 
+
+
+
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -63,6 +66,7 @@ export default function AccountMenu() {
 
 
       </Box>
+    
 
       <Box  sx={{ display:{ xs:'block',sm:'none'} , alignItems: 'center', textAlign: 'center'}} >
         <nav id="">
@@ -71,7 +75,11 @@ export default function AccountMenu() {
     
         
            
-            <Tooltip title="Account settings">
+            <Tooltip
+             title="Account settings"
+         
+
+            >
           <IconButton
             onClick={handleClick}
             size="small"
@@ -91,7 +99,7 @@ export default function AccountMenu() {
       </Box>
 
 
-
+   
 
 
       

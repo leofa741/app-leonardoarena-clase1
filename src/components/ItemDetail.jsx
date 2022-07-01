@@ -1,31 +1,77 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import  { useContext } from "react";
 
 import ItemCount from "./ItemCount";
 import productos from "../database/products";
-import { useParams } from "react-router-dom";
+import {  Link, useParams } from "react-router-dom";
 import { Box, Typography, Grid,Button} from "@mui/material";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import {SelectedSizes} from "./SelectedSizes";
 
+import { useNavigate } from 'react-router-dom';
 
 
 
 const ItemDetail = () => {
-  const id = useParams().id;
-  const product = productos[id];
 
- const onAdd=(count)=>{
-    console.log(count);
-  const  cantidad = count;
-  }
-const agregarCarrito = () => {
-  console.log("agregar al carrito");
-}
   
+  const navigate = useNavigate();
+
+
+
+  const id = useParams().id;
+  const product = productos[id]; 
+
+  const [temporal, setTemporal]= useState( {
+      id:productos[id],
+      description: product.description,
+      images: [0],   
+      price: product.price,
+      size: undefined,
+      name:product.name,  
+      title: product.title,
+      cantidad:undefined        
+   } );
+
+  
+ const SelecSize=(size)=>{
+  console.log(size)
+  setTemporal(curretProduct =>({
+    ...curretProduct,
+    size
+  }));
+ }
+
+ const updatecount=(cantidad)=>{
+  console.log(cantidad)
+  setTemporal(curretProduct =>({
+    ...curretProduct,
+    cantidad
+  }));
+ }
+
+
+
+const agregarCarrito = (count) => {
+  console.log("agregar al carrito");
+  if(!temporal.size){
+    
+    return ;}else{
+
+    
+   console.log((temporal));    
+
+ navigate('/shoppingcart');  
+
+    }
+   
+
+    
+}
 
   return (
+
     <Grid container spacing={3}>
       <Grid item xs={12} sm={6} md={4} lg={6}>
         <Slide easing="ease" duration={900} indicators={true}>
@@ -43,46 +89,35 @@ const agregarCarrito = () => {
               </div>
             );
           })}
-        </Slide>
-
-      
+        </Slide>      
       </Grid>
 
       <Grid item xs={12} sm={6} md={8} lg={6}>
         <Box display="flex" flexDirection="column">
           <Typography>$:{product.price}</Typography>
           <Typography>{product.title}</Typography>
-          <SelectedSizes SelectedSize={product.sizes[0]} sizes={product.sizes} ></SelectedSizes>
-          
-          <Typography
-            variant="body2"                  
-            color="textSecondary"
-            component="p"
-          >cantidad</Typography>
-          <ItemCount
-            stock={product.inStock}
-            initial={1}
-            onAdd={onAdd}  
 
-           />
-          <br />
+          <SelectedSizes  SelectedSize={temporal.size}  SelecSize={SelecSize}  sizes={product.sizes}  ></SelectedSizes>          
         
-          <br />
-          <br />
-          <Button
-            variant="contained"
-            size="small"
-            color="secondary"
-            onClick={agregarCarrito}
-          >
-            Agregar al carrito de compras
+          <ItemCount currenValue={temporal.cantidad}  stock={product.inStock} initial={1} selecCant={updatecount}  />
+          <br />  
+          <Typography>Cantidad : {temporal.cantidad}</Typography>      
+          <br />       
+        
+          <Button variant="contained" size="small" color="secondary" onClick={()=> agregarCarrito() }  >
+           {
+            temporal.size ? 'Agregar al carrito de compras' :  'selecionar talla ' 
+             
+           }
+          
+           
           </Button>
              </Box>
           
-          <Box sx={{ my: 3 }}>
-        
-        
+          <Box sx={{ my: 3 }}>        
         </Box>
+
+
         <Box sx={{ my: 3 }}>
           <Typography>{product.description}</Typography>
         </Box>

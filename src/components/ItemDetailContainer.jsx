@@ -22,12 +22,12 @@ const ItemDetailContainer = (props) => {
           <br></br>
         </Box> 
       </div>
-    );
+    ); 
   } else {
     return (
       <>
 
-        <ItemDetail />
+        <ItemDetail   />
       </>
     );
   }

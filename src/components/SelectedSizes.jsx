@@ -1,11 +1,16 @@
 import React from "react";
-import { Button, Box, Typography } from "@mui/material";
+import { Button, Box } from "@mui/material";
 
-export const SelectedSizes = (props) => {
+
+
+
+
+
+export const SelectedSizes = ({sizes,SelecSize}) => {
   return (
     <Box>
-      {props.sizes.map((size) => (
-        <Button key={size} size="small"     >
+      {sizes.map((size) => (
+        <Button key={size} size="small"  onClick={()=>SelecSize(size)  }  >
           {size}
         </Button>
       ))}

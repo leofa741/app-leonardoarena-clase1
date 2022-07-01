@@ -22,7 +22,7 @@ const theme = createTheme({
     },
   },
 });
-const ItemCount = ({ stock, initial, onAdd }) => {
+const ItemCount = ({ stock, initial, selecCant }) => {
   const [count, setCount] = useState(initial);
 
   const sumar = () => {
@@ -30,27 +30,20 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       setCount(count + 1);
     }
   };
-
+ 
   const restar = () => {
     if (count > initial) {
       setCount(count - 1);
     }
   };
+
  
-  onAdd(count);
-
-  
-
-
 
   return (
     <Box>
-    
 
       <ButtonGroup>
-        <ThemeProvider theme={theme}>
-
-        
+        <ThemeProvider theme={theme}>        
         <IconButton  color='rest' onClick={restar}>
             <RemoveCircleOutline />
           </IconButton>
@@ -60,14 +53,11 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             <AddCircleOutline />
           </IconButton>
         </ThemeProvider>
-
-     
+      
       </ButtonGroup>
       <br />
 
-      <Button 
-      onClick={() => onAdd(count)}          
-       variant="contained" size="small"> Confirmar  </Button>
+      <Button   onClick={() => selecCant(count)} variant="contained" size="small"> Confirmar  </Button>
 
     </Box>
   );
