@@ -11,6 +11,8 @@ import {SelectedSizes} from "./SelectedSizes";
 
 import { useNavigate } from 'react-router-dom';
 
+import { UserContext } from "../context/context";
+
 
 
 const ItemDetail = () => {
@@ -18,13 +20,13 @@ const ItemDetail = () => {
   
   const navigate = useNavigate();
 
-
+ 
 
   const id = useParams().id;
   const product = productos[id]; 
 
   const [temporal, setTemporal]= useState( {
-      id:productos[id],
+    
       description: product.description,
       images: [0],   
       price: product.price,
@@ -33,7 +35,7 @@ const ItemDetail = () => {
       title: product.title,
       cantidad:undefined        
    } );
-
+   const {setCarrito} = useContext(UserContext);
   
  const SelecSize=(size)=>{
   console.log(size)
@@ -43,26 +45,29 @@ const ItemDetail = () => {
   }));
  }
 
- const updatecount=(cantidad)=>{
+ const updatecount=(cantidad)=>{ 
   console.log(cantidad)
   setTemporal(curretProduct =>({
     ...curretProduct,
-    cantidad
-  }));
+    cantidad,  
+  }
+  ));
+ 
  }
 
-
-
+ 
+ 
 const agregarCarrito = (count) => {
   console.log("agregar al carrito");
   if(!temporal.size){
     
     return ;}else{
 
-    
-   console.log((temporal));    
 
- navigate('/shoppingcart');  
+   console.log((temporal));    
+  
+  setCarrito(temporal)
+   navigate('/shoppingcart')  
 
     }
    

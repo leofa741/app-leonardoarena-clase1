@@ -16,8 +16,9 @@ import {
 import { CarList } from "./CarList";
 
 const CarWidget = (props) => {
-  const algo = useContext(UserContext);
-  console.log(algo);
+
+  // const {valordelcontexto} = useContext(UserContext);
+  // console.log(valordelcontexto);
 
   if (props.menu) {
     return (
@@ -28,7 +29,7 @@ const CarWidget = (props) => {
           </Badge>
         </NavLink>
       </div>
-    );
+    ); 
   } else {
     return (
       <div className="item-list-container">
@@ -38,7 +39,11 @@ const CarWidget = (props) => {
               <h1 className="item-list-container__titulo"> shopping cart</h1>
               <Grid container>
                 <Grid item xs={12} sm={7}>
-                  <Typography>mm</Typography>
+                  <Typography> cesta</Typography>
+                
+                  
+                   
+                 
                   <CarList />
                 </Grid>
                 <Grid item xs={12} sm={5}>
