@@ -1,63 +1,49 @@
-import React from 'react'
-import { useState } from 'react';
-import { UserContext } from './context'
 
+import React from 'react'
+import { useState,useEffect } from 'react';
+import { UserContext } from './context';
+import{cookie} from 'react-cookies';
 
 export const UserProvider = ({children}) => {
 
-const [carrito,setCarrito]= useState([]);
+  const [cesta,setCesta] = useState([]);
 
-const [cantidadtotal,SetCantidadTotal]= useState(0)
+  useEffect(() => {
+    const cookies = cookie.load('cesta');
+    setCesta(cookies);
+    }, []);
 
-const [preciototal,SetPreciototal]= useState(0)
+    const addToCesta = (product) => {
+        if(!cesta[product]){
+        cesta[product] = [];
+        }
+        cesta[product].push(product);
+        }
+        return () => {
 
+            };
 
-const agregarproducto= (producto,cantidad)=>{
+            };
+            const removeFromCesta = (product) => {
+                cesta[product].splice(cesta[product].indexOf(product), 1);
+            };
 
-  const copia=[...carrito]
+            const addToCesta = (product) => {
+                cesta[product].
+                forEach((c) => {
+                    c.quantity++;
+                }
+                );
 
-  const nuevoproducto={
-...producto,
-cantidad:cantidad
-  }
-  copia.push(nuevoproducto)
-  setCarrito(copia)
-  SetCantidadTotal(cantidadtotal+cantidad)
-  SetPreciototal(preciototal+cantidad*producto.price)
+                c.quantity--;
+                };
 
-}
-
-const eliminarproducto= (producto)=>{
-
- 
-
-
-}
-
-const actualizarcantidad=(producto,cantidad)=>{
-
-
-}
-
-const vaciarcarrito=()=> {}
-
-const valordelcontexto={
-  carrit:carrito,
-  cantidadtotal:cantidadtotal,
-  preciototal:preciototal,
-  agregarproducto:agregarproducto
-}
-
-  return (
-
-    <UserContext.Provider value={{carrito, setCarrito}}>
-
-    { children }
-
-    </UserContext.Provider>
+             
 
 
-    
-  )
-}
- 
+
+
+          
+
+
+   

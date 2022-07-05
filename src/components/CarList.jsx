@@ -24,55 +24,35 @@ console.log(marray)
   return (
     <>
 
-{/* 
-{
-                carrito.map( product => (
-                    <Grid container spacing={2} key={ product.name + product.size } sx={{ mb:1 }}>
-                      
-                        <Grid item xs={7}>
-                            <Box display='flex' flexDirection='column'>
-                                <Typography variant='body1'>{ product.title }</Typography>
-                                <Typography variant='body1'>Talla: <strong>{ product.size }</strong></Typography>
-
-                               
-                                
-                            </Box>
-                        </Grid>
-                        <Grid item xs={2} display='flex' alignItems='center' flexDirection='column'>
-                            <Typography variant='subtitle1'>{ `$${ product.price }` }</Typography>
-                            
-                           
-                        </Grid>
-                    </Grid>
-                ))
-            } */}
-
-
-    {/* <pre>
-
-
-      {JSON.stringify(carrito,null,7)}
-
-     
-
-      </pre>  */}
+      <Grid container spacing={3}>
+        {marray.map((item, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Contemplative Reptile"
+                height="140"
+                image={item[0]}
+                title="Contemplative Reptile"
+              />
+              <Box p={2}>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {item[1]}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+                  unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
+                  dignissimos laborum odit? Eius
+                </Typography>
+                <Link href="#">Ver más</Link>
+              </Box>
+            </CardActionArea>
+          </Grid>
+        ))}
+      </Grid>
 
 
-
-
-     
-       
-          <div >
-          <p>{marray[0]}</p>
-            <p>{marray[1]}</p>
-            <p>{marray[2]}</p>
-            <p>{marray[3]}</p>
-          </div>
-       
-     
-
-
-
+      
 
     
     </>

@@ -37,6 +37,8 @@ const ItemCount = ({ stock, initial, selecCant }) => {
     }
   };
 
+  
+
  
 
   return (

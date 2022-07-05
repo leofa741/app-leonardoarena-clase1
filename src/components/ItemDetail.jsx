@@ -77,6 +77,8 @@ const agregarCarrito = (count) => {
 
   return (
 
+    
+
     <Grid container spacing={3}>
       <Grid item xs={12} sm={6} md={4} lg={6}>
         <Slide easing="ease" duration={900} indicators={true}>

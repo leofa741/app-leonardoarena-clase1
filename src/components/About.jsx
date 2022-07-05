@@ -2,10 +2,12 @@ import React from "react";
 
 
 
+
 const About = () => {
 
   
         return(
+
             <div className="about">
                 <div className="about__contenedor">
                     <div className="about__contenido">

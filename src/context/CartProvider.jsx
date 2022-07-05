@@ -4,16 +4,30 @@ import { UserContext } from './context'
 
 
 export const CartProvider = ({children}) => {
+    const [cart, setCart] = useState([]);
+    const [total, setTotal] = useState(0);
+    const [user, setUser] = useState(null);
 
-    const [carrito, setcarrito] = useState([]);
-    const [cantidad_total,setCantidadTotal]= useState(0)
-    const [precio_total,setPrecioTotal]= useState(0)
+    const addToCart = (product) => {
+        const newCart = [...cart, product];
+        setCart(newCart);
+        setTotal(total + product.price);
+    }
 
-    const  copia=[...carrito]
+    const removeFromCart = (product) => {
+        const newCart = cart.filter(item => item.id !== product.id);
+        setCart(newCart);
+        setTotal(total - product.price);
+    }
 
-
+    const setUserData = (user) => {
+        setUser(user);
+    }
 
     
+
+
+        
 
 
 
